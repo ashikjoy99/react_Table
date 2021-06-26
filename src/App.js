@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import SortTable from "./Components/SortTable";
+import BasicTable from './Components/BasicTable';
+import GlobalFilterTable from "./Components/GlobalFilterTable";
+import PagingTable from "./Components/PagingTable";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>PagingTable</h1>
+      <PagingTable/>
+      <h1>Global Filter and Column Filter</h1>
+      <GlobalFilterTable/>
+      <h1>Sorting Table</h1>
+      <SortTable/>
+      <h1>Basic Table</h1>
+      <BasicTable/>
     </div>
   );
 }
